@@ -27,10 +27,8 @@ private:
 
 
 public:
-    AtkBar
-();
-    ~AtkBar
-();
+    AtkBar();
+    ~AtkBar();
 
     int firstAttackPoint, secondAttackPoint;
 
@@ -58,4 +56,7 @@ public:
     char getAttackChar(){return attackAreaCharacter;};
     void setBarSpeed(int spd){barSpeed = spd;};
     
+    //both placeholders, must return damage in the future   
+    int correctHit();
+    int missedHit();
 };
